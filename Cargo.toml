@@ -6,5 +6,12 @@ edition = "2024"
 [dependencies]
 arc-swap = "1"
 
+[dev-dependencies]
+criterion = "0.8.2"
+
 [target.'cfg(loom)'.dependencies]
 loom = "0.7"
+
+[[bench]]
+name = "atomic_ptr_vs_arcswap"
+harness = false
