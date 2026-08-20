@@ -5,3 +5,6 @@ edition = "2024"
 
 [dependencies]
 arc-swap = "1"
+
+[target.'cfg(loom)'.dependencies]
+loom = "0.7"
